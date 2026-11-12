@@ -8,8 +8,8 @@ function App() {
 
   return (
     <>
-      <UserDetails name={"Bruce Wayne"} isOnline={true} />
-      <UserDetails name={"Clark Kent"} isOnline={false} />
+      <UserDetails name={"Bruce Wayne"} isOnline={true} hideOffline={true} isPremium={true} role={'admin'} />
+      <UserDetails name={"Clark Kent"}  isOnline={true} hideOffline={true} isNewUser={true} role={'user'}/>
       {/*<h1>React Playground App</h1>*/}
       {/*<CardWrapper title="User Profile">*/}
       {/*  <p>Name : Bruce Wayne</p>*/}
