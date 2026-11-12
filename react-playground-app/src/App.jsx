@@ -1,17 +1,27 @@
-import {useState} from 'react'
 import './App.css'
-import {Welcome} from "./component/Welcome.jsx";
-import {Button} from "./component/Button.jsx";
+import {Product} from "./component/Product";
+import {Greeting} from "./component/Greeting";
+import {CardWrapper} from "./component/CardWrapper";
+import {UserDetails} from "./component/UserDetails";
 
 function App() {
 
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <h1>React Playground App</h1>
-      <Welcome name="Abhinaw"/>
-      <Button label="Click Me"/>
+      <UserDetails name={"Bruce Wayne"} isOnline={true} />
+      <UserDetails name={"Clark Kent"} isOnline={false} />
+      {/*<h1>React Playground App</h1>*/}
+      {/*<CardWrapper title="User Profile">*/}
+      {/*  <p>Name : Bruce Wayne</p>*/}
+      {/*  <p>Age : 35</p>*/}
+      {/*  <p>City : Gotham</p>*/}
+      {/*  <button name={"edit"}>Edit</button>*/}
+      {/*</CardWrapper>*/}
+      {/*<Greeting name="Bruce" message="Good Morning"/>*/}
+      {/*<Greeting name="Clark" />*/}
+      {/*<Greeting message="Welcome" />*/}
+      {/*<Greeting/>*/}
+      {/*<Product title="Iphone 14" price={1200} inStock={true} category={["Electronics", "Mobile"]}/>*/}
     </>
   )
 }
