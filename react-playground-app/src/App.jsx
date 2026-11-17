@@ -5,13 +5,16 @@ import {CardWrapper} from "./component/CardWrapper";
 import {UserDetails} from "./component/UserDetails";
 import {ProductList} from "./component/ProductList";
 import {NameList} from "./component/NameList";
-import {AlertWithInlineCSS} from "./component/AlertWithInlineCSS.jsx";
 import {Alert} from "./component/Alert.jsx";
+import {SimpleCounter} from "./component/SimpleCounter.jsx";
+import {PrevSimpleCounter} from "./component/PrevSimpleCounter.jsx";
 
 function App() {
 
   return (
     <>
+      <PrevSimpleCounter/>
+      <SimpleCounter/>
       <Alert>Your changes have been saved</Alert>
       <Alert type="error">Something went wrong !</Alert>
       <NameList/>
